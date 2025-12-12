@@ -1,0 +1,96 @@
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.2s;
+    min-width: 300px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: var(--accent-color);
+}
+
+.card:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.expired {
+    border-color: var(--danger-color);
+}
+
+.expired .timeDisplay {
+    color: var(--danger-color);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 85%;
+}
+
+.deleteBtn {
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    padding: 0;
+    border: none;
+    line-height: 1;
+}
+
+.deleteBtn:hover {
+    color: var(--danger-color);
+    background: transparent;
+}
+
+.timeDisplay {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.deadline {
+    letter-spacing: 0.05em;
+}

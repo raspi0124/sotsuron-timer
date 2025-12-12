@@ -1,0 +1,62 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--card-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.iconBtn {
+    background: transparent;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    border: 1px solid var(--card-border);
+}
+
+.iconBtn:hover {
+    border-color: var(--accent-color);
+    background-color: transparent;
+}
+
+.addBtn {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+}
+
+.fullscreenMode {
+    padding: 0;
+}
